@@ -33,6 +33,10 @@ img{
     align-items: center;
 }
 
+.barra_centrar{
+    align-items: center;
+}
+
 @media (min-width: 768px){
     .barra{
         display: flex;
@@ -73,7 +77,7 @@ img{
         font-size: 30px;
 }
 
-@media (min-width: 768px){
+@media (min-width: 978px){
     .navegacion{
     text-align: center;
     font-weight: 400;
@@ -115,7 +119,8 @@ img{
     align-items: center;
 }
 
-@media (min-width: 768px){
+
+@media (min-width: 1160px){
     .secciones{
     display: flex;
     flex-direction: row;
@@ -151,7 +156,7 @@ img{
     justify-content: center;
 }
 
-@media (min-width: 768px){
+@media (min-width: 1160px){
     .ingresos{
         display: flex;
         flex-direction: row;
