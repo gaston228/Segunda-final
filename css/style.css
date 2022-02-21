@@ -8,17 +8,22 @@ html{
     box-sizing: inherit;
 }
 
+body{
+    background-image: url(/img/Imagen\ Pisadas\ 3.jpg);
+}
+
 a{
     text-decoration: none;
 }
 
 img{
+    max-width: 120 rem;
     width: 100%;
 }
 
 .contenedor {
     max-width: 120rem;
-    margin: auto 0;
+    margin: 0 auto;
 }
 
 .buscador{
@@ -37,7 +42,7 @@ img{
     align-items: center;
 }
 
-@media (min-width: 768px){
+@media (min-width: 1160px){
     .barra{
         display: flex;
         flex-direction: row;
@@ -51,8 +56,10 @@ img{
 .logo_imagen{
     width: 110px;
     height: 110px;
-    padding: 10px;
-    margin: 10px;
+    padding: 1px;
+    margin: 15px;
+    background-color: green;
+    border-radius: 45%;
 }
 .titulo{
     color: rgb(23, 38, 235);
@@ -77,7 +84,7 @@ img{
         font-size: 30px;
 }
 
-@media (min-width: 978px){
+@media (min-width: 1160px){
     .navegacion{
     text-align: center;
     font-weight: 400;
@@ -90,7 +97,9 @@ img{
 }
 
 .principal{
-    margin: 5px;
+    margin: 1rem;
+    margin-bottom: 5rem;
+    margin-top: 3rem;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -108,10 +117,22 @@ img{
     background-size: cover;
 }
 
-.secciones{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.grid{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+    .grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (min-width: 1160px) {
+    .grid{
+        grid-template-columns: repeat(4,1fr);
+    }
 }
 
 .centrar{
@@ -119,21 +140,6 @@ img{
     align-items: center;
 }
 
-
-@media (min-width: 1160px){
-    .secciones{
-    display: flex;
-    flex-direction: row;
-    margin: 100px;
-    justify-content: space-evenly;
-}
-}
-
-.secciones_logos{
-    display: flex;
-    justify-content: space-between;
-    margin: 50px;
-}
 
 .secciones__logo--agregado{
     background-color: rgb(23, 38, 235);
@@ -143,11 +149,18 @@ img{
     height: 250px;
 }
 
-.secciones__logo--texto{
+.secciones__contenido--texto{
     font-family: 'Fuzzy Bubbles', cursive;
-    margin-left: 80px;
-    margin-top: 10px;
-    text-transform: uppercase;
+    font-size: 4rem;
+    margin: 2rem;
+    color: blue;
+}
+
+.secciones__contenido--texto:hover{
+    color: green;
+    transition: color .4s ease;
+    background-color: lightskyblue;
+    border-radius: 50%;
 }
 
 .ingresos{
@@ -174,7 +187,7 @@ img{
     padding: 10px;
 }
 
-@media (min-width: 768px){
+@media (min-width: 1160px){
 .footer_items{
     display: flex;
     align-items: center;
