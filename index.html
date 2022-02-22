@@ -92,35 +92,41 @@
 
         <h2 class="nuevosIngresos">Nuevos Ingresos</h2>
         
-        <div class="secciones">    
-            <div class="ingresos__precios">
+        <div class="grid">    
+            <div class="secciones">
                 <a href="#">
-                    <img class="ingresos_imagen" src="./img/Alimento Perro.jpg" alt="alimentoperro">
+                    <img class="secciones__logo--agregado color_borde" src="./img/Alimento Perro.jpg" alt="alimentoperro">
+                        <div>
+                            <input class="boton" type="submit" value="comprar">
+                        </div>
                 </a>
-                <input class="boton" type="submit" value="comprar">
             </div>
             
-            <div class="ingresos__precios">
+            <div class="secciones">
                 <a href="#">
-                    <img class="ingresos_imagen" src="./img/Alimento Gatos.jpg" alt="alimentogato">
-                    <div class="centrar">
-                        <input class="boton" type="submit" value="comprar">
-                    </div>
+                    <img class="secciones__logo--agregado color_borde" src="./img/Alimento Gatos.jpg" alt="alimentogato">
+                        <div class="centrar">
+                            <input class="boton" type="submit" value="comprar">
+                        </div>
                 </a>
             </div>
 
-            <div class="ingresos__precios">
+            <div class="secciones">
                 <a href="#">
-                    <img class="ingresos_imagen"  src="./img/Alimento Peces.png" alt="alimentopeces">
+                    <img class="secciones__logo--agregado color_borde"  src="./img/Alimento Peces.png" alt="alimentopeces">
+                        <div>
+                            <input class="boton" type="submit" value="comprar">
+                        </div>
                 </a>
-                <input class="boton" type="submit" value="comprar">
             </div>
 
-            <div class="ingresos__precios">
+            <div class="secciones">
                 <a href="#">
-                    <img class="ingresos_imagen"  src="./img/Alimento aves.jpeg" alt="alimentoaves">  
+                    <img class="secciones__logo--agregado color_borde"  src="./img/Alimento aves.jpeg" alt="alimentoaves">  
+                        <div>
+                            <input class="boton" type="submit" value="comprar">  
+                        </div>
                 </a>
-                <input class="boton" type="submit" value="comprar">                    
             </div>
             
         </div>
@@ -128,41 +134,48 @@
  </main>
 
  <footer class="footer">
-
-    <section class="footer_items">
-
-
-    <div>
-        <h3>Categoria</h3>
-        <ul>
-            <li><a href="#">Perros</a></li>
-            <li><a href="#">Gatos</a></li>
-            <li><a href="#">Peces</a></li>
-            <li><a href="#">Aves</a></li>
-            
-        </ul>
+     
+    <div class="footer_items--grid">
+        <div>
+            <h3>Categoria</h3>
+                <div>
+                    <ul class="quitar_puntos">
+                        <li><a href="#">Perros</a></li>
+                        <li><a href="#">Gatos</a></li>
+                        <li><a href="#">Peces</a></li>
+                        <li><a href="#">Aves</a></li>
+                        
+                    </ul>
+                </div>
+        </div>
     </div>
 
-    <div>
-        <h3>Cuenta</h3>
-        <ul>
-            <li><a href="/page/micuenta.html">Mi Cuenta</a></li>
-            <li><a href="#">Mis Direcciones</a></li>
-            <li><a href="#">Mis Compras</a></li>            
-        </ul>
+    <div class="footer_items--grid">
+        <div>
+            <h3>Cuenta</h3>
+                <div>
+                    <ul class="quitar_puntos">
+                        <li><a href="/page/micuenta.html">Mi Cuenta</a></li>
+                        <li><a href="#">Mis Direcciones</a></li>
+                        <li><a href="#">Mis Compras</a></li>            
+                    </ul>   
+                </div>
+        </div>
     </div>
 
-    <div>
+    <div class="footer_items--grid"> 
+        <div>
         <h3>Animal Fest</h3>
-        <ul>
-            <li><a href="/page/contacto.html">Contacto</a></li>
-            <li><a href="/page/nostros.html">Nosotros</a></li>
-            <li><a href="#">Blog</a></li>            
-            <li><a href="#">Direccion</a></li>            
-        </ul>
+            <div>
+                <ul class="quitar_puntos">
+                    <li><a href="/page/contacto.html">Contacto</a></li>
+                    <li><a href="/page/nostros.html">Nosotros</a></li>
+                    <li><a href="#">Blog</a></li>            
+                    <li><a href="#">Direccion</a></li>            
+                </ul>   
+            </div>
+        </div>
     </div>
-
-    </section>
 
     <p class="footer__derechos">Todos los derechos reservados Animal Fest</p>
 

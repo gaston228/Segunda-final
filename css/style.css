@@ -12,6 +12,7 @@ body{
     background-image: url(../img/Imagen\ Pisadas\ 3.jpg);
 }
 
+
 a{
     text-decoration: none;
 }
@@ -108,7 +109,7 @@ img{
 
 .principal__imagen{
     width: 90%;
-    height: 500px;
+    height: 440px;
     size: 50px;
     border: green solid 5px;
     border-bottom: red solid 5px;
@@ -141,6 +142,7 @@ img{
 }
 
 
+
 .secciones__logo--agregado{
     background-color: rgb(23, 38, 235);
     margin: 10px 20px;
@@ -161,24 +163,15 @@ img{
     transition: color .4s ease;
     background-color: lightskyblue;
     border-radius: 50%;
+    font-weight: 700;
+}
+.color_borde{
+    background-color: red;
 }
 
-.ingresos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-@media (min-width: 1160px){
-    .ingresos{
-        display: flex;
-        flex-direction: row;
-    }
-    .ingresos__precios{
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-    }
+.quitar_puntos{
+    list-style:none;
+    color: blue;
 }
 
 .footer{
@@ -186,15 +179,12 @@ img{
     background-color: cadetblue;
     padding: 10px;
 }
-
-@media (min-width: 1160px){
-.footer_items{
+.footer_items--grid{
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+}
 
-}
-}
 
 .footer__derechos{
     text-align: center;
@@ -223,11 +213,17 @@ img{
 }
 
 .boton{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 40%;
+    text-transform: uppercase;
+    cursor: pointer;
+}
 
+.boton:hover{
+    background-color: green;
+    font-weight: 700;
+    transition: background-color .4s ease;
 }
 
 .perros__imagen{
