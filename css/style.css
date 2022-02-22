@@ -185,9 +185,25 @@ img{
     text-align: center;
 }
 
-
 .footer__derechos{
     text-align: center;
+}
+
+.titulo-produto{
+    text-align: center;
+    margin: 2.5rem;
+    font-size: 4rem;
+    color: green;
+}
+
+.formato_titulo{
+    font-size: 5.5rem;
+    text-align: center;
+    color: blue;
+    font-weight: 700;
+    border-radius: 30%;
+    background-color: lightgreen;
+
 }
 
 .ingresos{
